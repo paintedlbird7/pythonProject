@@ -1,4 +1,5 @@
 from behave import *
+#1/2 half of feature steps pass
 
 @step('All items are "{item}" related')
 def check_all_items(context, item):

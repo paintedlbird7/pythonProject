@@ -4,7 +4,9 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
-#
+
+# #feature steps pass
+
 @step("goto {daily_deals}")
 def click_deals(context, daily_deals):
     daily_deals = context.driver.find_element('xpath', f"//*[contains(@class, 'gh-') and text() = '{daily_deals}']")

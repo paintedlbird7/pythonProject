@@ -10,6 +10,8 @@ from time import sleep
 #     driver = webdriver.Chrome()
 #     driver.get('https://google.com')
 
+#feature steps pass
+
 @step('open eBay.com')
 def open_ebay(context):
     context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
@@ -57,18 +59,3 @@ def click_search(context):
     button = context.driver.find_element('xpath', "//li[@id ='gh-p-3']")
     button.click()
     sleep(4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
