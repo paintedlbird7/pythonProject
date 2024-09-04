@@ -8,7 +8,7 @@ from time import sleep
 @step('In search field type "{item}"')
 def search_for_some_item(context, item):
     search_field = context.driver.find_element('xpath', "//input[@aria-label = 'Search for anything']")
-    search_field.send_keys('item')
+    search_field.send_keys(item)
     sleep(10)
 
 @step('Filter "{filter_name}" option "{option}"')
