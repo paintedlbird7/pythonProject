@@ -15,6 +15,7 @@ Scenario: I search for an invalid product
   And I click on Search button
   And Proper message should be displayed in Search results
 
+@completed
 Scenario: Search without entering any product
   Given I got navigated to Home page
   When I don't enter anything into the Search box field

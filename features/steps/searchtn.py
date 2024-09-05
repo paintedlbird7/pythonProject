@@ -53,6 +53,10 @@ def step_impl(context):
     print('INSIDE - When I don\'t enter anything into the Search box field')
 
 
+@then("proper message will display in Search results")
+def step_impl(context):
+    print('INSIDE - Then proper message will display in Search results')
+
 
 
 
