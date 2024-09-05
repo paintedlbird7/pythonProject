@@ -19,9 +19,8 @@ def check_all_items(context, item):
 def check_only_iphone(context):
     items_on_page = context.driver.find_elements('xpath', "//div[class='srp-main srp-main--isLarge']")
     for item in items_on_page:
-       if 'dress' not in item.text.lower():
+       if 'iphone' not in item.text.lower():
            print(f'Item {item.text} does not have iphone"')
-           # Do I need to "send keyes" for it to search "dress"?
 
 # # 5. prints all items
 # Use a While Loop for Pagination

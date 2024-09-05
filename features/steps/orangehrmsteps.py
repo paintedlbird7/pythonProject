@@ -4,9 +4,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 
-# @given(u'launch chrome browser')
-# def launchBrowser(context):
-#     context.driver = webdriver.Chrome()
+
 # 
 # @when(u'open orange hrm homepage')
 # def openHomePage(context):
