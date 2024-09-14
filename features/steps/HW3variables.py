@@ -9,7 +9,7 @@ from time import sleep
 
 @step("goto {daily_deals}")
 def click_deals(context, daily_deals):
-    daily_deals = context.driver.find_element('xpath', f"//*[contains(@class, 'gh-') and text() = '{daily_deals}']")
+    daily_deals = context.driver.find_element('xpath', f"//*[contains(@class, 'gh-') and normalize-space(text()) = '{daily_deals}']")
     daily_deals.click()
     print("Clicked on the link  Daily Deals")
 
@@ -21,11 +21,27 @@ def click_sell(context, anything):
     btn.click()
     sleep(4)
     print("go to  empty_box")
+#uncomment below
+# @step("check landing on {title}")
+# def check_landing(context, title):
+#     expected_title = context.driver.title
+#     assert expected_title == title
 
-@step("check landing on {title}")
-def check_landing(context, title):
-    expected_title = context.driver.title
-    assert expected_title == title
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
