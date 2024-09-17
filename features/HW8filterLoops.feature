@@ -6,4 +6,6 @@ Scenario: Filter by Dress Length
     Then In search field type "dress"
     Then Click the "Search" button
     Then filter "Dress Length" option "Short"
-    And All items should be related to "Dress Length" value | "Short"
+    And All items should be related to "Dress Length" value "Short"
+    # uncomment to test exception, expected Short, received/actual Long
+#    And All items should be related to "Dress Length" value | "Long"
